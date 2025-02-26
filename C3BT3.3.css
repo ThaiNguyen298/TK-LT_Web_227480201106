@@ -1,0 +1,17 @@
+h1{
+    color: blue;
+    text-align: center;
+}
+
+ol{
+    font-size: 14px;
+    color: rgb(122, 88, 88);
+}
+
+.khung{
+    border: 2px solid pink;
+    padding: 20px;
+    width: 60%;
+    margin: auto;
+    background-color:aqua;
+}
