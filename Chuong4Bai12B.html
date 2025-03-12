@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đọc giá trị từ 2 hộp text</title>
+</head>
+<body>
+    <h2>Nhập họ tên và năm sinh, sau đó nhấn nút hiển thị</h2>
+
+    Họ và Tên: <input type="text" id="HoTen"><br><br>
+    Năm sinh: <input type="text" id="NamSinh"><br><br>
+
+    <input type="button" name="HienThi" value="Hiển thị" onclick="hienthiThongTin();">
+
+    <script>
+        function hienthiThongTin(){
+            var hoTen = document.getElementById("HoTen").value;
+            var namSinh = document.getElementById("NamSinh").value;
+            alert("Họ và Tên: "+hoTen+ "\nNăm Sinh: "+namSinh);
+        }
+    </script>
+</body>
+</html>

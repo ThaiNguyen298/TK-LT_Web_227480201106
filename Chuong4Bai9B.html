@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách thiết bị văn phòng</title>
+</head>
+<body>
+    <script>
+    var soLuong, x;
+    var danhSach = new Array(100);
+    soLuong = prompt("Nhập số lượng các thiết bị văn phòng")
+    for(i=0; i<soLuong; i++){
+        danhSach[i] = prompt("Nhập tên thiết bị")
+    }
+    document.write("<table border = '1' cellspacing = '0' cellpadding = '5'");
+    document.write("<tr><tr>Tên thiết bị</tr>");
+    for(x in danhSach){
+        if(danhSach[x] == "Computer"){
+            document.write("<tr><td>"+danhSach[x]+"</td></tr>");
+        }
+    }
+</script>
+</body>
+</html>
