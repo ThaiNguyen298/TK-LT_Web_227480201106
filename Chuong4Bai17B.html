@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thay đổi màu</title>
+</head>
+<body>
+    <script>
+        function DoiMau(Mau)
+        {
+            document.bgColor = Mau.value;
+        }
+    </script>
+    Bạn hãy chọn màu:
+    <input type="radio" name="DoiMau" id="MauVang" value="Yellow" onclick="if(MauVang.checked == true){DoiMau(MauVang)}"> Vàng
+    <input type="radio" name="DoiMau" id="MauXanhLaCay" value="Green" onclick="if(MauXanhLaCay.checked == true){DoiMau(MauXanhLaCay)}"> Xanh Lá Cây
+    <input type="radio" name="DoiMau" id="MauNau" value="Brown" onclick="if(MauNau.checked == true){DoiMau(MauNau)}"> Nâu
+    <input type="radio" name="DoiMau" id="MauTimHong" value="Magenta" onclick="if(MauTimHong.checked == true){DoiMau(MauTimHong)}"> Tím Hồng
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máy tính</title>
+</head>
+<body>
+    <h2>Hãy nhập hai số và chọn phép toán</h2>
+    <input type="text"  id="SoHang1" > 
+    <input type="text"  id="SoHang2" > 
+    <input type="text"  id="KetQua" readonly > <br><br>
+
+    <input type="radio" name="phepToan" value="cong" id="cong"> Cộng (+)
+    <input type="radio" name="phepToan" value="tru" id="tru"> Trừ (-)
+    <input type="radio" name="phepToan" value="nhan" id="nhan"> Nhân (*)
+    <input type="radio" name="phepToan" value="chia" id="chia"> Chia (/)
+
+    <input type="button" value="Tính" onclick="
+    var so1 = (document.getElementById('SoHang1').value);
+    var so2 = (document.getElementById('SoHang2').value);
+    var KetQua = 0;
+    if (isNaN(so1)|| isNaN(so2)){
+        alert('Vui lòng nhập số hợp lệ!');
+        return;
+    }
+    if (document.getElementById('cong').checked) {
+        KetQua = so1 + so2;
+    } else if (document.getElementById('tru').checked){
+        KetQua = so1 - so2;
+    }else if (document.getElementById('nhan').checked) {
+        KetQua = so1 * so2;
+    }else if (document.getElementById('chia').checked){
+        if (so2 === 0){
+            alert('Không thể chia cho 0');
+            return;
+        }
+        KetQua.value = so1 / so2;
+    }else {
+        alert('Vui lòng chọn phép toán!');
+        return;
+
+    }
+    document.getElementById('KetQua').value = KetQua;
+    ">
+</body>
+</html>
